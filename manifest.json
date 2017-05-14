@@ -1,24 +1,27 @@
 {
   "name": "Canonicalizer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Strips the URL down to its barest version",
   "homepage_url": "http://extensionizr.com",
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "tabs"
+  ],
   "background": {
     "scripts": [
       "src/background.js"
     ],
     "persistent": false
   },
-  "permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": [
