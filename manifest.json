@@ -11,7 +11,7 @@
   },
   "background": {
     "scripts": [
-      "src/bg/background.js"
+      "src/background.js"
     ],
     "persistent": false
   },
@@ -26,7 +26,7 @@
         "http://*/*"
       ],
       "js": [
-        "src/inject/inject.js"
+        "src/inject.js"
       ]
     }
   ]
